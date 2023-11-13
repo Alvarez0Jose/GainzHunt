@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GainzHunt</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #ff0000;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            position: relative;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        nav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GainzHunt</h1>
+            <img src="https://th.bing.com/th/id/OIG.sSdJitWYBffre3gXopTj?pid=ImgGn" alt="Large cover image" style="width: 20%; height: auto;>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="features">Features</h2>
+        <ul>
+            <li>
+                <h3>Search with Google Maps API</h3>
+                <p>Allows user to search for gym locations near them using the Google Maps API.</p>
+                <img src="https://th.bing.com/th/id/OIG.inmk2uNIvtw2nCCPi8Uz?pid=ImgGn&w=1024&h=1024&rs=1" alt="Search bar image" style="width: 10%; height: auto;">
+            </li>
+            <li>
+                <h3>Viewing of reviews with Google Places API</h3>
+                <p>Allows users to see how good or bad the selected gym location is, and that way the user can decide if he/she wants to go that gym. Using Google Places API.</p>
+                <img src="/home/jose/Downloads/Screenshot 2023-11-13 081531.jpg" alt="Gym review image">
+            </li>
+        </ul>
+        <h2 id="about">About</h2>
+        <p>This project was inspired by the frustration of visiting gyms only to be disappointed by what was found. With GainzHunt, anyone can get into the fitness lifestyle in a location that best suits their needs, saving time and effort.</p>
+        <p>Created by Jose Alvarez Gutierrez. Connect with me on <a href="https://www.linkedin.com/in/joseaalvarezgutierrez" style="color: #ff0000;">LinkedIn</a> and <a href="https://github.com/Alvarez0Jose" style="color: #ff0000;">GitHub</a>.</p>
+        <p>Check out the project repository on <a href="https://github.com/Alvarez0Jose/GainzHunt" style="color: #ff0000;">GitHub</a>.</p>
+    </div>
+    <footer>
+        <p>© 2023 GainzHunt. All rights reserved.</p>
+    </footer>
+</body>
+</html>
