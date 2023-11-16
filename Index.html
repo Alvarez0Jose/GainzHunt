@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GainzHunt</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">GainzHunt</h1>
+            <nav class="tabs">
+                <!-- Add the navigation tabs -->
+                <div class="tab" data-target="login">Login</div>
+                <div class="tab" data-target="search">Search</div>
+                <div class="tab" data-target="register">Sign Up</div>
+                <div class="tab" data-target="about">About</div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Add the tab content -->
+        <div id="login" class="tab-content active">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="register" class="tab-content">
+            <h2>New User</h2>
+            <form action="/register" method="post">
+                <label for="register-username">Username:</label><br>
+                <input type="text" id="register-username" name="username"><br>
+                <label for="register-password">Password:</label><br>
+                <input type="password" id="register-password" name="password"><br>
+                <label for="register-email">Email:</label><br>
+                <input type="email" id="register-email" name="email"><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        <div id="search" class="tab-content">
+            <h2>Search</h2>
+            <form id="search-form">
+                <label for="city">City in Puerto Rico:</label><br>
+                <select id="city" name="city">
+                    <option value="">Select a city</option>
+                    <option value="san_juan">San Juan</option>
+                    <option value="guaynabo">Guaynabo</option>
+                    <option value="mayaguez">Mayaguez</option>
+                    <!-- Add more options for other cities -->
+                </select><br>
+                <input type="submit" value="Search">
+            </form>
+            <!-- Add a div to display the search results -->
+            <div id="results"></div>
+        </div>
+        <div id="about" class="tab-content">
+            <h2>About</h2>
+            <p>This project was inspired by the frustration of visiting gyms only to be disappointed by what was found. With GainzHunt, anyone can get into the fitness lifestyle in a location that best suits their needs, saving time and effort.  With time the plan is to continue developing this application that way the team can eventually cover all the gyms in the world instead of just some gyms in Puerto Rico.</p>
+            <p>Created by Jose Alvarez Gutierrez. Connect with me on <a href="https://www.linkedin.com/in/joseaalvarezgutierrez" style="color: #ff0000;">LinkedIn</a> and <a href="https://github.com/Alvarez0Jose" style="color: #ff0000;">GitHub</a>.</p>
+            <p>Check out the project repository on <a href="https://github.com/Alvarez0Jose/GainzHunt" style="color: #ff0000;">GitHub</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
+
+
