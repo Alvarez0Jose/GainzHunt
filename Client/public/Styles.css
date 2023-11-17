@@ -1,14 +1,33 @@
 body {
     background-color: #f3f3f3;
-    background-image: url("GymBackground.jpg");
+    background-image: url("BackgroundGym2.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #000;
-    font-family: Arial, sans-serif;
+    color: #f80606;
+    font-family: 'Arial', sans-serif; /* Change the font-family to Arial or any other preferred font */
     margin: 0;
     padding: 0;
+}
+
+/* Add styles for gym information */
+/* Add styles for gym information */
+#gymsContainer {
+    font-size: 1.2em; /* Adjust the font size */
+    line-height: 1.6; /* Adjust the line height for better readability */
+    color: #3c3030; /* Change the font color */
+    background-color: rgba(255, 255, 255, 0.9); /* Add a white background with some transparency */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+#gymsContainer h2 {
+    color: #ff0000; /* Change the heading color */
+}
+
+#gymsContainer p {
+    margin: 10px 0;
 }
 
 header {

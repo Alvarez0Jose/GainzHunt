@@ -18,7 +18,7 @@ router.post('/login', async (req, res) => {
     const username = req.body.username;
     const plainTextPassword = req.body.password;
 
-    if (!username || !plainTextPassword) {
+   if (!username || !plainTextPassword) {
         return res.status(400).send('Username and password must not be empty');
     }
 
