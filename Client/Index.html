@@ -25,23 +25,27 @@
         <!-- Add the tab content -->
         <div id="login" class="tab-content active">
             <h2>Login</h2>
-            <form action="/login" method="post">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br>
-                <input type="submit" value="Submit">
-            </form>
+                <!-- Update the form action to match the server route -->
+                <form action="/api/login" method="post">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+                    <input type="submit" value="Submit">
+                  </form>
+
+
+
         </div>
         <div id="register" class="tab-content">
             <h2>New User</h2>
             <form action="/register" method="post">
                 <label for="register-username">Username:</label><br>
-                <input type="text" id="register-username" name="username"><br>
+                <input type="text" id="register-username" name="username"required><br>
                 <label for="register-password">Password:</label><br>
-                <input type="password" id="register-password" name="password"><br>
+                <input type="password" id="register-password" name="password"required><br>
                 <label for="register-email">Email:</label><br>
-                <input type="email" id="register-email" name="email"><br>
+                <input type="email" id="register-email" name="email"required><br>
                 <input type="submit" value="Register">
             </form>
         </div>
@@ -50,10 +54,7 @@
             <form id="search-form">
                 <label for="city">City in Puerto Rico:</label><br>
                 <select id="city" name="city">
-                    <option value="">Select a city</option>
                     <option value="guaynabo">Guaynabo</option>
-                    <option value="san juan">San Juan</option>
-                    <option value="mayaguez">Mayaguez</option>
                     <!-- Add more options for other cities -->
                 </select><br>
                 <input type="button" value="Search" id="searchButton">
@@ -63,7 +64,7 @@
         </div>
         <div id="about" class="tab-content">
             <h2>About</h2>
-            <p>This project was inspired by the frustration of visiting gyms only to be disappointed by what was found. With GainzHunt, anyone can get into the fitness lifestyle in a location that best suits their needs, saving time and effort.  With time the plan is to continue developing this application that way the team can eventually cover all the gyms in the world instead of just some gyms in Puerto Rico.</p>
+            <p>This project was inspired by the frustration of visiting gyms only to be disappointed by what was found. With GainzHunt, anyone can get into the fitness lifestyle in a location that best suits their needs, saving time and effort.  With time the plan is to continue developing this application that way the team can eventually cover all the gyms in the world instead of just some gyms in Puerto Rico.  Now go and find your Mount Olympus and Join the Greek gods!</p>
             <p>Created by Jose Alvarez Gutierrez. Connect with me on <a href="https://www.linkedin.com/in/joseaalvarezgutierrez" style="color: #ff0000;">LinkedIn</a> and <a href="https://github.com/Alvarez0Jose" style="color: #ff0000;">GitHub</a>.</p>
             <p>Check out the project repository on <a href="https://github.com/Alvarez0Jose/GainzHunt" style="color: #ff0000;">GitHub</a>.</p>
         </div>

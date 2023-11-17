@@ -25,11 +25,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Serve static files
-app.use(express.static(path.resolve(__dirname, '../Client', 'Index.html')));
+app.use(express.static(path.resolve(__dirname, '../Client')));
 
 // API Routes
 app.use('/api/gyms', gymRoutes);
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 // New route for fetching gym data
 app.get('/api/gyms', async (req, res) => {

@@ -5,7 +5,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #f80606;
+    color: rgba(0, 136, 248, 0.51)
     font-family: 'Arial', sans-serif; /* Change the font-family to Arial or any other preferred font */
     margin: 0;
     padding: 0;
@@ -147,3 +147,15 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+#about {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about p {
+    /* Adjust the text style for better readability */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Set the text color */
+}
